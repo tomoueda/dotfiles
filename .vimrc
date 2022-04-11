@@ -20,8 +20,6 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'dense-analysis/ale'
 
-Plugin 'ycm-core/YouCompleteMe'
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -50,7 +48,7 @@ colorscheme molokai
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
-  let g:ctrlp_user_command = '/usr/local/bin/ag %s -i --nocolor --nogroup --hidden
+  let g:ctrlp_user_command = '/usr/bin/ag %s -i --nocolor --nogroup --hidden
       \ --ignore .git
       \ --ignore .svn
       \ --ignore .hg
